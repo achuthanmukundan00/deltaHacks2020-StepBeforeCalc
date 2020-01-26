@@ -1,6 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  
-  <a class="navbar-brand" href="#"><img src="../../assets/StepB4CalcLogo.png" class="img-responsive"></a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <a class="navbar-brand" href="#"
+    ><img src="../../assets/StepB4CalcLogo.png" class="img-responsive"
+  /></a>
   <button
     class="navbar-toggler"
     type="button"
@@ -12,7 +13,11 @@
   >
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div
+    *ngIf="auth.user | async as user"
+    class="collapse navbar-collapse"
+    id="navbarNav"
+  >
     <ul class="navbar-nav" routerLinkActive="active">
       <li class="nav-item">
         <a class="nav-link" routerLink="home"
@@ -40,5 +45,13 @@
         >
       </li>
     </ul>
+    <div class="ml-auto">
+      <button
+        class="btn btn-outline-secondary pull-right"
+        (click)="auth.signOut()"
+      >
+        Logout
+      </button>
+    </div>
   </div>
 </nav>

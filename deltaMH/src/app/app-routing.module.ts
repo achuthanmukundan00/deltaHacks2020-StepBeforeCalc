@@ -8,14 +8,23 @@ import { InspirationComponent } from "./pages/inspiration/inspiration.component"
 import { TeamComponent } from "./pages/team/team.component";
 
 import { LoginComponent } from "./pages/login/login.component";
+import { AuthGuard } from "./services/auth.guard";
 
 const routes: Routes = [
   { path: "home", component: HomeComponent },
-  { path: "journal-editor", component: JournalEditorComponent },
-  { path: "journals", component: JournalsComponent },
-  { path: "calm", component: CalmComponent },
-  { path: "inspiration", component: InspirationComponent },
-  { path: "login", component: LoginComponent },
+  {
+    path: "journal-editor",
+    component: JournalEditorComponent,
+    canActivate: [AuthGuard]
+  },
+  { path: "journals", component: JournalsComponent, canActivate: [AuthGuard] },
+  { path: "calm", component: CalmComponent, canActivate: [AuthGuard] },
+  {
+    path: "inspiration",
+    component: InspirationComponent,
+    canActivate: [AuthGuard]
+  },
+  { path: "login", component: LoginComponent, canActivate: [AuthGuard] },
   { path: "team", component: TeamComponent },
   { path: "", redirectTo: "home", pathMatch: "full" }
 ];
