@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: "calm", component: CalmComponent },
   { path: "inspiration", component: InspirationComponent },
   { path: "", redirectTo: "home", pathMatch: "full" }
+  
 ];
 
 @NgModule({
