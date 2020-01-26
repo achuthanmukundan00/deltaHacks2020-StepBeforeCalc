@@ -10,6 +10,7 @@ import { JournalsComponent } from './pages/journals/journals.component';
 import { CalmComponent } from './pages/calm/calm.component';
 import { InspirationComponent } from './pages/inspiration/inspiration.component';
 import { LoginComponent } from './pages/login/login.component';
+import { TeamComponent } from "./pages/team/team.component";
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { LoginComponent } from './pages/login/login.component';
     JournalsComponent,
     CalmComponent,
     InspirationComponent,
-    LoginComponent
+    LoginComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
