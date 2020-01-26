@@ -19,11 +19,6 @@ const routes: Routes = [
   },
   { path: "journals", component: JournalsComponent, canActivate: [AuthGuard] },
   { path: "calm", component: CalmComponent, canActivate: [AuthGuard] },
-  {
-    path: "inspiration",
-    component: InspirationComponent,
-    canActivate: [AuthGuard]
-  },
   { path: "login", component: LoginComponent, canActivate: [AuthGuard] },
   { path: "team", component: TeamComponent },
   { path: "", redirectTo: "home", pathMatch: "full" }
