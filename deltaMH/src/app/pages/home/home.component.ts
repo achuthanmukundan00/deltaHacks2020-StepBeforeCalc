@@ -9,6 +9,7 @@ import { AuthService } from "src/app/services/auth.service";
 export class HomeComponent implements OnInit {
   hide = false;
   display_message = "";
+
   constructor(public auth: AuthService) {}
 
   ngOnInit() {
