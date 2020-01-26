@@ -63,13 +63,16 @@
 </div>
 
 <ng-template #login>
-  <div class="container-fluid">
-    <button
-      type="button"
-      class="btn btn-dark rounded-0 shadow-sm p-3"
-      (click)="auth.googleLogin()"
-    >
-      Sign in with Google
-    </button>
+  <div class="container text-center">
+    <div class="jumbotron">
+      <button
+        type="button"
+        class="btn btn-dark rounded-0 shadow-sm p-3"
+        (click)="auth.googleLogin()"
+        style="padding-top: 10vh;"
+      >
+        Sign in with Google
+      </button>
+    </div>
   </div>
 </ng-template>
