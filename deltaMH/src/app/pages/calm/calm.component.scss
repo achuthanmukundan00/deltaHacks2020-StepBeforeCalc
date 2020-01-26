@@ -1,0 +1,32 @@
+.screenbtn {
+    border: none;
+    color: white;
+    text-align: center;
+    height: 28.5vh;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    opacity: 0.1;
+    transition: 4s;
+    display: block;
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+  }
+  
+  .screenbtn:hover {opacity: 0.9}
+
+  #table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  tr{
+      margin: 0px;
+      padding: 0px;
+  }
+
+  th{
+      margin: 0px;
+      padding: 0px;
+  }
