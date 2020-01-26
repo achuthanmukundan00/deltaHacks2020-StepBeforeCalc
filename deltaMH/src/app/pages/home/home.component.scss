@@ -1,0 +1,13 @@
+.btnfade {
+    border: none;
+    color: white;
+    text-align: center;
+    height: 23vh;
+    width: 100%;
+    padding-left: -1vw;
+    padding-right: -1vw;
+    opacity: 0.2;
+    transition: 1.5s;
+  }
+  
+  .btnfade:hover {opacity: 0.9}

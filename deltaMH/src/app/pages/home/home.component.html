@@ -1,16 +1,42 @@
+<script>
+  function myFunction(){
+    document.getElementById("btn1").style.display="none";
+  }
+</script>
+
 <div class="container">
   <div class="table-responsive-sm">
     <table class="table table-hover">
       <tr>
-        <td><h2 class="d-inline-block">Welcome, friend!</h2></td>
-        <td><button class="btn btn-outline-secondary pull-right">Logout</button></td>
+        <td><div class="text-right"><button class="btn btn-outline-secondary pull-right">Logout</button></div></td>
       </tr>
     </table>
   </div>
 </div>
-<div class="container">
-  <blockquote class="blockquote">
-    <p>This quote will make you very inspired today. </p>
-    <footer class="blockquote-footer">Annie Gao</footer>
-  </blockquote>
+
+<div class="container text-center">
+  <div class="jumbotron">
+    <blockquote class="blockquote text-center">
+      <p>This quote is very inspiring and brings you to tears. </p>
+      <footer class="blockquote-footer">Annie Gao</footer>
+    </blockquote>
+  </div>
 </div>
+
+<div class="container" style="margin-bottom: 5vh;">
+  <h2>Welcome, friend! How are you feeling?</h2>
+</div>
+
+<div class="container">
+  
+  <div class="row" id="buttonbox" [hidden]="hide">
+    <div class="col"><button (click)=hideDiv0() class="btnfade" style="background-color: #ff0000;"></button></div>
+    <div class="col"><button (click)=hideDiv1() class="btnfade" style="background-color: #ff6600;"></button></div>
+    <div class="col"><button (click)=hideDiv2() class="btnfade" style="background-color: #ffc400;"></button></div>
+    <div class="col"><button (click)=hideDiv3() class="btnfade" style="background-color: #f7fa4b;"></button></div>
+    <div class="col"><button (click)=hideDiv4() class="btnfade" style="background-color: #2cb103;"></button></div>
+    <div class="col"><button (click)=hideDiv5() class="btnfade" style="background-color: #15037a;"></button></div>
+  </div>
+  <div class="jumbotron text-center" [hidden]="!hide"><h2>{{ display_message }}</h2></div>
+</div>
+
