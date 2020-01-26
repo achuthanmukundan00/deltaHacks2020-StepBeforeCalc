@@ -5,7 +5,6 @@ import { JournalEditorComponent } from "./pages/journal-editor/journal-editor.co
 import { JournalsComponent } from "./pages/journals/journals.component";
 import { CalmComponent } from "./pages/calm/calm.component";
 import { InspirationComponent } from "./pages/inspiration/inspiration.component";
-import { WelcomeMenuComponent } from "./pages/welcome-menu/welcome-menu.component";
 
 const routes: Routes = [
   { path: "home", component: HomeComponent },
@@ -13,7 +12,6 @@ const routes: Routes = [
   { path: "journals", component: JournalsComponent },
   { path: "calm", component: CalmComponent },
   { path: "inspiration", component: InspirationComponent },
-  { path: "welcome-menu", component: WelcomeMenuComponent },
   { path: "", redirectTo: "home", pathMatch: "full" }
 ];
 

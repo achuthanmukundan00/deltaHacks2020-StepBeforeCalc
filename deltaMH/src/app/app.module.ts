@@ -9,7 +9,6 @@ import { JournalEditorComponent } from './pages/journal-editor/journal-editor.co
 import { JournalsComponent } from './pages/journals/journals.component';
 import { CalmComponent } from './pages/calm/calm.component';
 import { InspirationComponent } from './pages/inspiration/inspiration.component';
-import { WelcomeMenuComponent } from './pages/welcome-menu/welcome-menu.component';
 
 
 @NgModule({
@@ -20,8 +19,7 @@ import { WelcomeMenuComponent } from './pages/welcome-menu/welcome-menu.componen
     JournalEditorComponent,
     JournalsComponent,
     CalmComponent,
-    InspirationComponent,
-    WelcomeMenuComponent
+    InspirationComponent
   ],
   imports: [
     BrowserModule,
